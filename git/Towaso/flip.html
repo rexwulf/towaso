@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale:1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="popover.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap-sass-3.3.5">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+body{
+background-image:url("back1.png") ;
+background-size:cover;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="details1">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="barg.png"  height="200px" width="200px" class="img-rounded"/>
+						</div>
+						<div class="back face center">
+							<h2><a id="dw1">Daily Waste</a></h2>
+							<h2><a id="dw2">Monthly Waste</a></h2>
+							<h2><a id="dw3">Statics</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="payment_1.png"  height="200px" width="200px" class="img-rounded"/>
+						</div>
+						<div class="back face center">
+							<h2><a id="pay1">Last Payment</a></h2>
+							<h2><a id="pay2">All Payment</a></h2>
+							<h2><a id="pay3">Pay your Bill</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="locate_1.png"  height="200px" width="200px" class="img-rounded"/>
+						</div>
+						<div class="back face center">
+							<h2><a id="map1">Map Start</a></h2>
+							<h2><a id="map2">This Location</a></h2>
+							<h2><a id="map3">Vehicle Location</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	
+	<div class="details2">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="alarm.png"  height="200px" width="200px" class="img-rounded"/>
+						</div>
+						<div class="back face center">
+							<h2><a id="com1">coming</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="trolley.png"  height="200px" width="200px" class="img-rounded"/>
+						</div>
+						<div class="back face center">
+							<h2><a id="rq1">Request Event</a></h2>
+							<h2><a id="rq2">Type of Event</a></h2>
+							<h2><a id="rq3">No. of Days</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div id="f1_container">
+					<div id="f1_card" class="shadow">
+						<div class="front face">
+							<img src="sug2.png"/  height="200px" width="200px" class="img-rounded">
+						</div>
+						<div class="back face center">
+							<h2><a id="sg1">Suggest</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+	  <div class="modal fade" id="myModal" role="dialog" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content"style="background-color:	#fffbea">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title" style="color:#dd7e1a">At your service</h3>
+				</div>
+				<div class="modal-body" id="myScrollspy" style="text-align:center; background-color:#eafbff">
+					<h2>Customer Id: DHN22011201</h2>
+					<h2>Customer Name: Avinash Kumar</h2>
+					<h3>Total waste:-10 Kg</h3>
+					<h3>Wet Waste:-7 Kg</h3>
+					<h3>Dry Waste:-3 Kg</h3>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>	
+	$(document).ready (function(){
+		 $("#dw1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+	 $("#dw2").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#dw3").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#pay1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#pay2").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#pay3").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+	 $("#map1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+	 $("#map2").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+	 $("#map3").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#com1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#rq1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#rq2").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#rq3").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+		 $("#sg1").click(function(){
+        $("#myModal").modal({backdrop: "static"});
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#dw").hover(function(){
+        $("#dw").show();
+    });
+});
+</script>
+</body>
+</html>

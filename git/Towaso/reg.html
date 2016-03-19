@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>reg</title>
+
+<script src='firebase.js'></script>
+ <script src='jquery.js'></script>
+ <script type="text/javascript" src='jquery-cookie/src/jquery.cookie.js'></script>
+
+
+</head>
+<body>
+<p id="text"></p>
+
+<script type="text/javascript">
+$.cookie("lemail","amma", { secure: true});
+
+
+console.debug($.cookie("lemail")); 
+
+localStorage.mail="chari";
+var email=localStorage.mail;
+console.log(email);
+$('text').text(email);
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

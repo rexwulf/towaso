@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Towaso Application form</title>
+	<link rel="stylesheet" href="css.css" type="text/css">
+
+<script src='firebase.js'></script>
+ <script src='jquery.js'></script>
+
+
+<script type="text/javascript" src="js.js"></script>
+
+
+
+</head>
+<body>
+
+<img id="image" src="images/logo5.png" height="27%" width="40%">
+
+<a href="index.html">
+<img  id="image1" src="images/home.jpg" height="5%" width="10%"></a>
+
+<h1 align="center"><tab5><span style="color: orange">APPLICATION FORM</span></h1><br>
+<section align="center">
+<div  align="center">
+<h1>You are interested in</h1><br>
+<h2 >
+<form id="myform">
+
+<input type="radio" name="dep" id="bd1" onclick="javascript:check();" value="BD">Business Development
+<input type="radio" name="dep" id="marketing" onclick="javascript:check();" value="Marketing">Marketing
+<input type="radio" name="dep" id="rd1"  onclick="javascript:check();" value="R and D">Research and Development<br><br>
+<input type="radio" name="dep" id="web1"  onclick="javascript:check();" value="Web">Web Development
+<input type="radio" name="dep" id="app1"  onclick="javascript:check();" value="App">App Development<br><br>
+<h5>* Complete the form with in 15 minutes</h5>
+<h6><sup style="color:red">*</sup>compulsory</h6>
+</form>
+
+<HR><br>
+<div id="full" ><br>
+<div id="all" >
+<br><br><br>
+SELECT THE DEPARTMENT YOU ARE INTERESTED IN...
+</div>
+<div id="nill" style="display: none" >
+<br><br><br>
+THANKS FOR INTEREST TO JOIN OUR TEAM...
+</div>
+</h2>
+
+
+<div id="common" style="display:none">
+<form class="form" >
+<h3 style="color:black">
+<div id ="timer"></div>
+NAME <tab5>
+<input type="text"id="name" placeholder="full name ">
+<sup style="color:red">*</sup><img id="name1" src="images/cross.jpg" height="25" style="display:none"><br>
+PLACE <tab5>
+<input type="text"id="place" placeholder="city">
+<sup style="color:red">*</sup><img id="place1" src="images/cross.jpg" height="25" style="display:none"><br>
+BRANCH<tab>
+<input type="text"id="branch" placeholder="your branch eg:ece/cse/mech...">
+<sup style="color:red">*</sup><img id="branch1" src="images/cross.jpg" height="25" style="display:none"><br>
+INSTITUTE <tab1><tab1>
+<input type="text" id="institute" placeholder="institute you study">
+<sup style="color:red">*</sup><img id="ins1" src="images/cross.jpg" height="25" style="display:none"><br>
+EXPERIENCE<tab1>
+<input type="text"id="exp" placeholder="eg: 5 months/1 year....">
+<sup style="color:red">*</sup><img id="exp1" src="images/cross.jpg" height="25" style="display:none"><br>
+EMAIL <tab5>
+<input type="email" id="email" placeholder="chari@gmail.com">
+<sup style="color:red">*</sup><img id="email1"src="images/cross.jpg" height="25" style="display: none;">
+<br>
+MOBILE <tab>
+<input type="text" id="phone" maxlength="10" placeholder="enter 10 idgit number eg:9856327410">
+<sup style="color:red">*</sup><img id="phone1" src="images/cross.jpg" height="25" style="display:none"><br>
+ACHIEVEMENTS
+<input type="text" id="achievements" placeholder="achievements">
+<img id="phone1" src="images/cross.jpg" height="25" style="display:none"><br>
+Why do you think you are fit for this ? <br><br>
+<textarea id="fit" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="fit1" src="images/cross.jpg" height="25" style="display:none"><br><br>
+How do you think you will contribute to ToWaSo ?<br><br>
+<textarea id="contribute" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="cont1" src="images/cross.jpg" height="25" style="display:none"><br>
+Uploaod Resume <tab1>
+<a href="https://script.google.com/macros/s/AKfycbxlAUM8qE2W8BReEqNY9CaYTIzkFbOoxIJUYNEPdCwbLW_Z4fsy/exec" 
+  target="popup" 
+  onclick="window.open('https://script.google.com/macros/s/AKfycbxlAUM8qE2W8BReEqNY9CaYTIzkFbOoxIJUYNEPdCwbLW_Z4fsy/exec','popup','width=600,height=600,menubar=no,location=no'); return false;">
+   <input type="button" value="Click to upload your resume">
+</a><br>
+
+
+<!-- <a href="https://script.google.com/macros/s/AKfycbzTzC6zQb0g9X5Je4WeEVJORCMsCrsPFMHMsX-6SSdR59yIZ7wi/exec"><input type="button" value="Click to upload your resume"></a> -->
+
+
+<div id="bd" style="display:none">
+<h4>Which plays a great role in a startup ? </h4><br><sup style="color:red">*</sup>
+<input type="radio" name="role" value="Business">Business
+<input type="radio" name="role" value="Marketing">Marketing	<img id="role1" src="images/cross.jpg" height="25" style="display:none">
+<textarea id="role2" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="role21" src="images/cross.jpg" height="25" style="display:none"><br>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="market" style="display:none">
+<h4>Which plays a great role in a startup ? </h4><br>
+<input type="radio" name="mrole" value="Business">Business
+<input type="radio" name="mrole" value="Marketing">Marketing	<img id="role1" src="images/cross.jpg" height="25" style="display:none"><br>
+<textarea id="mrole2" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="mrole21" src="images/cross.jpg" height="25" style="display:none"><br>
+<h4>Do you have an idea to do marketing for a startup ?</h4><br>
+<textarea id="idea" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="idea1" src="images/cross.jpg" height="25" style="display:none"><br>
+
+</div>
+
+<div id="rd" style="display:none">
+
+Which one do you prefer ?<br><br>
+<input type="radio" name="prefer" value="Door to Door   ">Door to Door
+<input type="radio" name="prefer" value="Biogas  ">Biogas	
+<input type="radio" name="prefer" value="Vermi compost   ">Vermi compost
+<input type="radio" name="prefer" value="Water treatment  ">Water treatment	<br>
+<textarea id="prefers" rows="6" cols="60" maxlength="250"></textarea><sup style="color:red">*</sup><img id="prefers1" src="images/cross.jpg" height="25" style="display:none">
+</div>
+
+
+
+<div id="web" style="display:none">
+Have you done any website ? if yes<br>
+<input type="text"id="web">
+
+
+
+
+
+</div>
+
+
+
+
+<div id="app" style="display:none">
+Have you done any app and is in playstore ? if yes..<br>
+<input type="text"id="apps"><br>
+Do you know any backend language ? if yes..
+<input type="text"id="backend">
+</div>
+
+
+
+<input type="button" id="submit" onclick="javascript:sub();" value="SUBMIT">
+
+
+</h2> 
+</div>
+
+
+</form>
+</div>
+
+
+</div>
+</section>
+
+</body>
+
+
+
+</html>
